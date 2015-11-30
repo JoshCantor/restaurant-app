@@ -1,0 +1,12 @@
+body {
+	margin: 0px;
+	margin-top: 0px;
+	font-family: sans-serif;
+}
+
+.header {
+	background-color: rgba(0, 0 , 0, 0.6);
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
