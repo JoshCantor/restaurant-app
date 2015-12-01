@@ -35,9 +35,11 @@ var getMenu = function() {
 
 		for (i in menu) {
 			var item = menu[i];
-			console.log(item.price);
-			var option = $('<option>').html(item.name + " " + item.price).attr('value', item.price);
-			var type = $('.' + item.type);
+			var name = item.name;
+			var price = item.price;
+			var type = item.type;
+			var option = $('<option>').html(name + " " + price).attr('value', price);
+			var type = $('.' + type);
 			type.append(option);
 		}
 
@@ -47,8 +49,8 @@ var getMenu = function() {
 getMenu();
 
 $('option').on('click', function(event) {
-	var item = event.target;
-	console.log(item);
+	var selected = event.target;
+	console.log(selected);
 })
 
 
