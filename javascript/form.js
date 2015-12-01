@@ -35,8 +35,8 @@ var getMenu = function() {
 
 		for (i in menu) {
 			var item = menu[i];
-			console.log(item);
-			var option = $('<option>').html(item.name, item.price);
+			console.log(item.price);
+			var option = $('<option>').html(item.name + " " + item.price);
 			var type = $('.' + item.type);
 			type.append(option);
 		}
